@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@200&family=Open+Sans:wght@400;600&family=Outfit:wght@400;700&family=Overpass:wght@700&family=Roboto:wght@400;700&display=swap');
+
+.myself{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5%;
+    text-align: left;
+}
+.quote{
+    margin-bottom: 1.7%;
+    font-family: Roboto;
+    font-size: x-large;
+    text-align: center;
+}
+.para1,.para2,.heading,.para3,.last-para{
+    margin-bottom: 1.5%;
+    font-size: large;
+
+}
+.ending{
+    display: block;
+}
+.btn-contact{
+    margin-top: 2%;
+}
+.btn-contact:hover{
+    color: hsl(342.28,98.34%,52.75%)!important;
+}
+.link-contact{
+    color: azure;
+}
+.link-contact:hover{
+    cursor: pointer;
+    color: azure;
+}
+.link-contact:active{
+    color: azure;
+}
+@media screen and (max-width:710px){
+    .para1,.para2,.heading,.para3,.last-para{
+        margin-bottom: 5%;
+        font-size: medium;
+      
+    }
+    .quote{
+        font-size: large;
+        margin-top:8%;
+        margin-bottom: 4%;
+    }
+    .btn{
+        padding: 1%;
+    }
+}
+@media screen and (max-width:600px){
+    .para1,.para2,.heading,.para3,.last-para{
+        margin-bottom: 4%;
+        font-size: medium;
+      
+    }
+    .quote{
+        font-size: large;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+    .btn{
+        padding: 1%;
+    }
+}
+@media screen and (max-width:400px){
+    .para1,.para2,.heading,.para3,.last-para{
+        font-size: small;
+        margin-bottom: 2%;
+    }
+    .quote{
+        font-size: medium;
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+    .btn{
+        padding: 1%;
+    }
+}

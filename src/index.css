@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@200&family=Open+Sans:wght@400;600&family=Outfit:wght@400;700&family=Overpass:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+}
+body {
+  overflow:hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height:100vh;
+  color: #e7e4e4;
+  background-image: linear-gradient(to top left,#2C3E50,#000);
+  padding: 2% 5%;
+  font-family: 'Roboto', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@media screen and (max-width:600px) {
+  body{
+     padding: 0; 
+  }
+}

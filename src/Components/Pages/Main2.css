@@ -1,0 +1,98 @@
+.container{
+    margin-top: 10%;
+}
+.ques{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 2%;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.arr{
+    font-weight: 800;
+    font-size: x-large;
+}
+.logos{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2%;
+}
+.sol{
+    font-size: 22px;
+    margin-bottom: 2%;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.btn{
+    font-size: medium;
+    font-weight: 700;
+}
+.link-about:hover{
+    color: azure;
+}
+.btn:hover{
+    color: azure!important;
+    animation: none !important;
+}
+@keyframes moveInLeft{ /*here orange coloured name is given by us wch we will add to the components that we make */
+    0%{
+        opacity: 0;/*element is invisible at the beginning*/
+        transform: translateX(-100px);/*make sure that -100 means 100px towards left side from its original position
+        and x axis is from left to right and y axis is from top to bottom*/
+    /*meaning that what should happen when website is just loading*/
+    /*this animation is being added to our mainheading that is heading primary*/
+    }
+    /*make sure that we may also add many intervals like 70% ...35% what ever we want */
+    80%{
+        opacity: 0.9;
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;/*element is fully visible when the website is loaded fully*/
+        transform: translate(0);
+    /*what should happen when website is almost finished loading*/
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        opacity: 0.9;
+        transform: translate(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@media screen and (max-width:600px) {
+    .container{
+       padding: 0; 
+       margin-top: 20%;
+    }
+    .sol{
+        margin-top:10%;
+    }
+    .btn{
+        margin-top: 5%;
+    }
+  }
+  @media screen and (max-width:400px) {
+    
+    .ques{
+        font-size: 32px;
+    }
+    .btn{
+        margin-top: 5%;
+    }
+  }
+  

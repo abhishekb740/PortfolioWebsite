@@ -1,0 +1,18 @@
+.logos{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2%;
+}
+.log{
+    width: 30px;
+}
+.log:hover{
+    cursor: pointer;
+}
+.link-about:hover{
+    color: azure;
+}

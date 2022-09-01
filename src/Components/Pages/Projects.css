@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@200&family=Open+Sans:wght@400;600&family=Outfit:wght@400;700&family=Overpass:wght@700&family=Roboto:wght@400;700&display=swap');
+
+.projects-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+.header h1{
+    margin-bottom: 7%;
+    font-size: 30px;
+}
+.proj{
+    width: 20%;
+    margin-bottom:1.9%;
+    font-size: 20px;
+}
+.proj a:hover{
+    text-decoration: none!important;
+    color: rgb(253,16,86);
+}
+.header{
+    font-size: x-large;
+    text-align: center;
+}
