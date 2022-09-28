@@ -2,11 +2,14 @@
 *{
   box-sizing: border-box;
 }
+html{
+  position: relative;
+}
 body {
-  overflow:hidden;
+  overflow-x:hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height:100vh;
+  min-height:100vh;
   color: #e7e4e4;
   background-image: linear-gradient(to top left,#2C3E50,#000);
   padding: 2% 5%;

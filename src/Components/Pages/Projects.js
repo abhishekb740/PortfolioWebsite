@@ -1,13 +1,20 @@
 import React from "react";
 import "./Projects.css";
-
+import Card from "../Card/Card";
+import { Container } from '@mui/material';
 const Projects = () => {
   return (
-    <div className="projects-main">
-      <div className="header proj">
-        <h1>Projects</h1>
-      </div>
-      <div className="crypto_curr_tracker proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110" >
+    <div>
+      <h1 className="heading"> Projects</h1>
+    <Container className="projects-main container">
+      <Card title="testing" content="this card is being tested" />
+      <Card title="testing" content="this card is being tested" />
+      <Card title="testing" content="this card is being tested" />
+      <Card title="testing" content="this card is being tested" />
+      <Card title="testing" content="this card is being tested" />
+      <Card title="testing" content="this card is being tested" />
+
+      {/* <div className="crypto_curr_tracker proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110" >
         <a target="_blank" href="https://abhishekb740.github.io/Crypto_curr_tracker/" >
           Crypto Currency Tracker
         </a>
@@ -59,6 +66,8 @@ const Projects = () => {
           QR-Component
         </a>
       </div>
+    </div> */}
+    </Container>
     </div>
   );
 };

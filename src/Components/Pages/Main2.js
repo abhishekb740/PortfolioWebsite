@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Main2.css";
-
+import Footer from "../Footer/Footer"
 const Main2 = () => {
   return (
     <div className="container">
@@ -19,6 +19,9 @@ const Main2 = () => {
           About Me
         </Link>
       </button>
+      <div>
+      <Footer />
+      </div>
     </div>
   );
 };

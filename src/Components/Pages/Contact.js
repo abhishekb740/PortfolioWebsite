@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import useInput from "../Hooks/use-input";
-
+import Footer from "../Footer/Footer"
 const Contact = () => {
   const {
     value: enteredName,
@@ -147,6 +147,9 @@ const Contact = () => {
       >
         Submit
       </button>
+      <div>
+        <Footer />
+      </div>
     </form>
   );
 };
