@@ -62,7 +62,6 @@ function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex'}} className="">
-  padding: 2% 5%;
       <AppBar component="nav" sx={{
         backgroundColor: !isMobileApp?"transparent":"inherit", 
         backgroundImage: !isMobileApp?"none":"linear-gradient(to top left,#2C3E50,#000)"
@@ -89,11 +88,22 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map(({value,link}) => {
                 return(
-                  <Fab
-                    className="nav-btn"
-                      sx={{backgroundColor:"transparent", color: "white",borderRadius: 0, m: 1, pl: 6, pr: 6, pt: 2, pb: 2, fontSize:"15px"}}
-                      href={link}
-                    >{value}
+                  <Fab className="nav-btn"
+                    sx={{
+                      backgroundColor:"transparent", 
+                      color: "white",
+                      borderRadius: 0,
+                      m: 1, 
+                      pl: 6, 
+                      pr: 6,
+                      pt: 2, 
+                      pb: 2, 
+                      fontSize:"15px",
+                      borderRadius: "40% 5%"
+                    }}
+                    href={link}
+                  >
+                    {value}
                   </Fab>
                 )
               }

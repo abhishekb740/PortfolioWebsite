@@ -5,12 +5,14 @@ import Resumeimg from "../../Resume.png";
 
 const Resume = () => {
   return (
-    <div>
-    <img src='Resumeimg' ></img>
-    <div>
-    <Footer />
-  </div>
-  </div>
+    <>
+      <div className='resume'>
+        <img src={Resumeimg} style={{
+          display: "block",
+          height: "80%"
+        }}/>
+      </div>
+    </>
   )
 }
 
