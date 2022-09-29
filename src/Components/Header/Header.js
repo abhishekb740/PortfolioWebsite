@@ -26,10 +26,19 @@ var navItems = [
   { value: "Contacts", link: "/home/contact" }
 ]
 
+
 function DrawerAppBar(props) {
+  const [width, setWidth] = React.useState(props.window().innerWidth);
+  const [height, setHeight] = React.useState(props.window().innerHeight);
+  const [isMobileApp, setIsMobileApp] = React.useState(width>height?false:true);
+  const handleSetWidth = () => {
+    setWidth(props.window().innerWidth)
+    setHeight(props.window().innerHeight)
+    setIsMobileApp(width>height?false:true)
+  }
+  props.window().addEventListener('resize', handleSetWidth)
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -53,7 +62,11 @@ function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex'}} className="">
-      <AppBar component="nav" sx={{backgroundColor: "transparent"}}>
+  padding: 2% 5%;
+      <AppBar component="nav" sx={{
+        backgroundColor: !isMobileApp?"transparent":"inherit", 
+        backgroundImage: !isMobileApp?"none":"linear-gradient(to top left,#2C3E50,#000)"
+      }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -77,10 +90,10 @@ function DrawerAppBar(props) {
             {navItems.map(({value,link}) => {
                 return(
                   <Fab
-                  className="nav-btn"
-                    sx={{backgroundColor:"transparent", color: "white",borderRadius: 0, m: 1, pl: 6, pr: 6, pt: 2, pb: 2, fontSize:"15px"}}
-                    href={link}
-                  >{value}
+                    className="nav-btn"
+                      sx={{backgroundColor:"transparent", color: "white",borderRadius: 0, m: 1, pl: 6, pr: 6, pt: 2, pb: 2, fontSize:"15px"}}
+                      href={link}
+                    >{value}
                   </Fab>
                 )
               }
@@ -98,7 +111,7 @@ function DrawerAppBar(props) {
             keepMounted: true,
           }}
           sx={{
-            display: { xs: 'block', sm: 'none',backgroundColor: "transparent" },
+            display: { xs: 'block', sm: 'none',backgroundColor: "black" },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >

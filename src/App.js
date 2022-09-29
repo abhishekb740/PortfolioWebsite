@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="body">
       <div className="portfolio">
-        <DrawerAppBar/>
+        <DrawerAppBar window={() => window}/>
         <div>
           <Routes>
             <Route path="/" element={<Navigate to="/home" />}></Route>

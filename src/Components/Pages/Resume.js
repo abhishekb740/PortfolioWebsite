@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Resume.css";
 import Footer from "../Footer/Footer"
+import Resumeimg from "../../Resume.png";
+
 const Resume = () => {
   return (
     <div>
-    <div className='resume'>...Under Construction!!</div>
+    <img src='Resumeimg' ></img>
     <div>
     <Footer />
   </div>
