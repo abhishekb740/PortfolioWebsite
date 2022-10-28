@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Resume.css";
 import Footer from "../Footer/Footer"
-import Resumeimg from "../../Resume.png";
+import Resumeimg from "../Abhishek Bhagat_Resume_page-0001.jpg";
 
 const Resume = () => {
   return (
@@ -9,7 +9,7 @@ const Resume = () => {
       <div className='resume'>
         <img src={Resumeimg} style={{
           display: "block",
-          height: "80%"
+          height: "50%"
         }}/>
       </div>
     </>

@@ -11,9 +11,6 @@
 .title:active{
     color: azure;
 }
-.nav-btn{
-
-}
 @media screen and (max-width:850px ) {
    .nav-btn{
 

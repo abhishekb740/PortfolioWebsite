@@ -4,16 +4,17 @@ import Card from "../Card/Card";
 import { Container } from "@mui/material";
 const Projects = () => {
   return (
-    <div >
+    <div>
       <h1 className="heading"> Projects</h1>
       <Container>
-        <a 
+        <a
           target="_blank"
           href="https://abhishekb740.github.io/Food-order-app/"
         >
           <Card
             className=" proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
-            title="Food Order App" content="A simple Food Order Application"
+            title="Food Order App"
+            content="A simple Food Order Application"
           />
         </a>
         <a
@@ -22,22 +23,25 @@ const Projects = () => {
         >
           <Card
             className="proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
-            title="Crypto Currency Tracker" content="Live Crypto Currency price tracker"
+            title="Crypto Currency Tracker"
+            content="Live Crypto Currency price tracker"
           />
         </a>
         <a target="_blank" href="https://abhishekb740.github.io/UserInfo/">
           <Card
             className="proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
-            title="User-Info" content="Displaying details of the User"
+            title="User-Info"
+            content="Displaying details of the User"
           />
         </a>
         <a
           target="_blank"
-          href="https://abhishekb740.github.io/interactive-rating-component/" 
+          href="https://abhishekb740.github.io/interactive-rating-component/"
         >
           <Card
             className="proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
-            title="Interactive Rating Component" content="A simple Rating component"
+            title="Interactive Rating Component"
+            content="A simple Rating component"
           />
         </a>
         <a
@@ -46,15 +50,22 @@ const Projects = () => {
         >
           <Card
             className="proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
-            title="Huddle Landing Page" content="A simple Huddle landing page"
+            title="Huddle Landing Page"
+            content="A simple Huddle landing page"
           />
         </a>
-        <a
-        target="_blank" href="https://abhishekb740.github.io/NFT_Card/"
-        >
+        <a target="_blank" href="https://abhishekb740.github.io/NFT_Card/">
           <Card
             className="proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
-            title="NFT-Card" content="NFT-card Component"
+            title="NFT-Card"
+            content="NFT-card Component"
+          />
+        </a>
+        <a target="_blank" href="https://sudoku-solver-740.herokuapp.com/" >
+          <Card
+            className="proj log transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"
+            title="Sudoku Solver"
+            content="Sodoku Solver"
           />
         </a>
 

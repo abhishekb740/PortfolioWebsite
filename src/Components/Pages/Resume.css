@@ -1,5 +1,5 @@
 .resume{
-    font-size: xx-large;
+    scale: 0.75;
     display: flex;
     justify-content: center;
 }

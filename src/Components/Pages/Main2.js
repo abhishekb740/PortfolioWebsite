@@ -7,8 +7,7 @@ const Main2 = () => {
     <div className="container">
       <div className="ques">Looking for a Web-Developer?</div>
       <div className="sol ">
-        I am a Web-Developer and Programmer from Pune. I make Web-Applications
-        using React.js. ✌️
+        I am a Web-Developer and Programmer from Pune. I make Web-Application using React.js for frontend, Node/Express.js for backend and Mongodb for database. ✌️
       </div>
       <button className="btn hover:animate-none animate-pulse antialiased border border-slate-300 transition ease-in-out delay-50 bg-slate-500 hover:-translate-y-1 hover:scale-110 hover:bg-#10b981-500  ">
         <Link
